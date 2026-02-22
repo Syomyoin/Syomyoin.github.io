@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>櫻本坊別院 勝妙院 | 大阪市東淀川区 相川</title>
+  <title>櫻本坊別院 勝妙院 | 大阪市東淀川区 相川 | 桜本坊 | 金峯山修験本宗 | 真言宗 | 修験 | 神社 | 護摩</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="大阪市東淀川区相川にある 櫻本坊別院 勝妙院 の公式案内。ご祈祷・ご供養・年中行事・写真館・お問い合わせ。">
 
@@ -111,10 +111,40 @@
       color: var(--red);
     }
 
-    /* 写真館 */
+    /* CSS 年中行事 */
+    #events img {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;          /* ← 高さを固定して統一 */
+      object-fit: cover;      /* ← 縦長でも横長でも綺麗にトリミング */
+      border: 2px solid var(--border);
+      padding: 4px;
+      background: #ffffff;
+      border-radius: 4px;
+      margin: 10px;
+    }
+
+    .events-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 40px;
+    }
+
+    /* CSS 写真館 */
     #gallery img {
       width: 100%;
       max-width: 300px;
+      height: 200px;          /* ← 高さを固定して統一 */
+      object-fit: cover;      /* ← 縦長でも横長でも綺麗にトリミング */
       border: 2px solid var(--border);
       padding: 4px;
       background: #ffffff;
@@ -176,7 +206,15 @@
       <h2>年中行事</h2>
       <p>毎月18日 午後1時 ：護摩供</p>
       <p>1/18 ：初護摩供、風呂敷護摩供</p>
+        <div class="gallery-row">
+          <img src="images/01/1.jpg" alt="初護摩供、風呂敷護摩供1">
+          <img src="images/01/2.jpg" alt="初護摩供、風呂敷護摩供2">
+        </div>
       <p>2/18 ：星護摩（ほしごま）</p>
+        <div class="gallery-row">
+          <img src="images/02/1.jpg" alt="星護摩1">
+          <img src="images/02/2.jpg" alt="星護摩2">
+        </div>
       <p>11/18 ：不動山勝妙院大祭</p>
 
       <p class="contact-note">護摩は本堂で行っております。<br>
@@ -190,7 +228,7 @@
       <h2>写真館</h2>
       <h3>最新の投稿はこちら： </h3>
       <p>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fryoshot%2Fposts%2Fpfbid02hokWvPPzM9Pd8kjZVS77grrbKiGqEDdp4kRUBjaATdXiJiGDqKYQiAhL3AWqZcnal&show_text=true&width=500" width="500" height="748" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fryoshot%2Fposts%2Fpfbid02gpkSd829LDauaLqvfyB6zTa3Q1RHJFm8U2iEfXPCdanovXiDkEMGo5KvkjXryQZil&show_text=true&width=500" width="500" height="486" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </p>
       <p>
         <a href="https://www.facebook.com/ryoshot" target="_blank">
